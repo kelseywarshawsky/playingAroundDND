@@ -12,7 +12,7 @@ module.exports = function (sequelize, DataTypes) {
         con: DataTypes.INTEGER,
         wis: DataTypes.INTEGER,
         acrobatics: DataTypes.INTEGER,
-        animal_handling: DataTypes.INTEGER,
+        animal: DataTypes.INTEGER,
         arcana: DataTypes.INTEGER,
         athletics: DataTypes.INTEGER,
         deception: DataTypes.INTEGER,
@@ -31,12 +31,12 @@ module.exports = function (sequelize, DataTypes) {
         survival: DataTypes.INTEGER,
     });
     // To help the tables join 
-    // Character.associate = (models) => {
-    //     Character.belongsTo(models.User, {
-    //       foreignKey: 'userId',
-    //       onDelete: 'CASCADE',
-    //     })
-    //   };
+    character.associate = (models) => {
+        character.belongsTo(models.user, {
+          foreignKey: 'username',
+          onDelete: 'CASCADE',
+        })
+      };
     return character;
 };
 
