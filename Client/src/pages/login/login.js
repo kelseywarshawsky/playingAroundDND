@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
-export class signUp extends React.Component {
-
+export class login extends React.Component {
   render() {
     return (
       <Form>
@@ -13,10 +12,6 @@ export class signUp extends React.Component {
         <FormGroup>
           <Label for="examplePassword">Password</Label>
           <Input type="password" name="password" id="examplePassword" placeholder="password placeholder" />
-        </FormGroup>
-        <FormGroup>
-          <Label for="exampleName">Name</Label>
-          <Input type="name" name="name" id="examplePassword" placeholder="name placeholder" />
         </FormGroup>
         <Button color="info">Submit</Button><Button color="info">Sign up!</Button>
         </Form>

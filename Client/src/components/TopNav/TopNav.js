@@ -12,7 +12,7 @@ import {
   DropdownMenu,
   DropdownItem } from 'reactstrap';
 
-export default class TopNav extends React.Component {
+export class TopNav extends React.Component {
   constructor(props) {
     super(props);
 
@@ -35,7 +35,7 @@ export default class TopNav extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">SignUp</NavLink>
+                <NavLink href="">SignUp</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="">LogIn</NavLink>
@@ -64,3 +64,4 @@ export default class TopNav extends React.Component {
     );
   }
 }
+
