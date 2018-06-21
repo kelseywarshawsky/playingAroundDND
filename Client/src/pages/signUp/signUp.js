@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Button, Container, Form, FormGroup, Label, Input, FormText, Row } from 'reactstrap';
 
 export class signUp extends React.Component {
 
   render() {
     return (
+      <Container>
+        <Row>
       <Form>
         <FormGroup>
           <Label for="exampleEmail">Email</Label>
@@ -20,6 +22,8 @@ export class signUp extends React.Component {
         </FormGroup>
         <Button color="info">Submit</Button><Button color="info">Sign up!</Button>
         </Form>
+        </Row>
+        </Container>
         );
       }
     }
